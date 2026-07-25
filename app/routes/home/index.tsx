@@ -17,7 +17,7 @@ export async function loader({request}: Route.LoaderArgs): Promise<{projects: Pr
   const url = new URL(request.url);
 
   const [projectRes, postRes] = await Promise.all([
-    fetch(`${import.meta.env.VITE_API_URL}/projects?filters[featured][$eq]=true&populate=*`),
+    fetch(`${import.meta.env.VITE_API_URL}/projects?filters[featured][$eq]=true&sort=date:desc&populate=*`),
     fetch(`${import.meta.env.VITE_API_URL}/posts?sort=date:desc&populate=*`),
   ])
     if(!projectRes.ok || !postRes.ok){

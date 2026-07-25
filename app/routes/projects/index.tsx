@@ -13,7 +13,7 @@ export function meta({}: Route.MetaArgs) {
   }
 
 export async function loader({request}: Route.LoaderArgs): Promise<{projects: Project[]}>{
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/projects?populate=*`);
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/projects?sort=date:desc&populate=*`);
     const json : StrapiResponse<StrapiProject> = await res.json();
 
     const projects = json.data.map((item) => ({
