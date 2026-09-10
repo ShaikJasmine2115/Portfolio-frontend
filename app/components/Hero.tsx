@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 const Hero = ({
   name = '[NAME]',
-  text = ' I build friendly web experiences using React and Tailwind CSS.',
+  text = ' I build friendly web experiences using React, TypeScript and JavaScript.',
 }) => {
   return (
     <header className='text-center py-20 px-4 bg-gray-900 text-white transition-colors duration-300'>

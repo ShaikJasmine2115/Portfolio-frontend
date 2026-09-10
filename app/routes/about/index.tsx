@@ -18,7 +18,7 @@ const About = () => {
               Hey, I'm Jasmine
             </h1>
             <p className='text-gray-300 text-lg'>
-              I'm a passionate web developer who loves building friendly digital experiences using React and Tailwind CSS. Building projects using React and developing expertise in Full stack as well.
+              I'm a passionate web developer who loves building friendly digital experiences using React, JavaScript and TypeScript. Building projects using React and developing expertise in Full stack as well.
             </p>
           </div>
         </div>
@@ -36,14 +36,15 @@ const About = () => {
         <ul className='flex flex-wrap gap-4 text-sm text-gray-300'>
           {[
             'React',
-            'Tailwind CSS',
-            'JavaScript',
             'TypeScript',
+            'JavaScript',        
+            'Tanstack Query',
+            'Tanstack Router',
+            'Tailwind CSS',
             'HTML',
             'CSS',
             'Git',
-            'GitHub',
-            'Vercel',
+            'GitHub'
           ].map((tech) => (
             <li key={tech} className='bg-gray-700 px-3 py-1 rounded-md'>
               {tech}
